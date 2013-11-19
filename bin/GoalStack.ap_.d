@@ -1,0 +1,19 @@
+/Users/dblair/Development/workspace/goalstack-1/platforms/android/bin/GoalStack.ap_ \
+ : /Users/dblair/Development/workspace/goalstack-1/platforms/android/res/drawable/icon.png \
+/Users/dblair/Development/workspace/goalstack-1/platforms/android/res/drawable-hdpi/icon.png \
+/Users/dblair/Development/workspace/goalstack-1/platforms/android/res/drawable-ldpi/icon.png \
+/Users/dblair/Development/workspace/goalstack-1/platforms/android/res/drawable-mdpi/icon.png \
+/Users/dblair/Development/workspace/goalstack-1/platforms/android/res/drawable-xhdpi/icon.png \
+/Users/dblair/Development/workspace/goalstack-1/platforms/android/res/values/strings.xml \
+/Users/dblair/Development/workspace/goalstack-1/platforms/android/res/xml/config.xml \
+/Users/dblair/Development/workspace/goalstack-1/platforms/android/bin/res/drawable/icon.png \
+/Users/dblair/Development/workspace/goalstack-1/platforms/android/bin/res/drawable-hdpi/icon.png \
+/Users/dblair/Development/workspace/goalstack-1/platforms/android/bin/res/drawable-ldpi/icon.png \
+/Users/dblair/Development/workspace/goalstack-1/platforms/android/bin/res/drawable-mdpi/icon.png \
+/Users/dblair/Development/workspace/goalstack-1/platforms/android/bin/res/drawable-xhdpi/icon.png \
+/Users/dblair/Development/workspace/goalstack-1/platforms/android/assets/www \
+/Users/dblair/Development/workspace/goalstack-1/platforms/android/assets/www/config.xml \
+/Users/dblair/Development/workspace/goalstack-1/platforms/android/assets/www/cordova.js \
+/Users/dblair/Development/workspace/goalstack-1/platforms/android/assets/www/cordova_plugins.js \
+/Users/dblair/Development/workspace/goalstack-1/platforms/android/assets/www/index.html \
+/Users/dblair/Development/workspace/goalstack-1/platforms/android/bin/AndroidManifest.xml \
