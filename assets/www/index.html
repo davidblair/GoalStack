@@ -1,8 +1,135 @@
-<html lang="en">
-<head><title>GoalStack</title></head>
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>GoalStack</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/jquery.mobile-1.2.1.css" />
+	<script src="js/jquery-1.8.3.js"></script>
+	<script src="js/jquery.mobile-1.2.1.js"></script>
+	
+</head> 
 <body>
-<h1>Team Densmore</h1>
-<p>It works!</p>
-</body>
-</html>
+<section id="goalapp">
+	<!-- Start of HOME page -->
+	<div data-role="page" id="home">
+	    <div data-theme="a" data-role="header">
+		        <a data-role="button" href="#add" data-icon="plus" data-iconpos="left"
+		        class="ui-btn-right" data-transition="slide">
+		            Add
+		        </a>
+		        <a data-role="button" data-inline="true" href="#" data-icon="gear"
+		        data-iconpos="left" class="ui-btn-left" onclick="$('.advanced').toggle();">
+		            Tools
+		        </a>
+		        <h3>
+		            Goal Starter
+		        </h3>
+	    </div>
+		<section id="goal-home">
+	    <div data-role="content">
+				<ul id="goal-list" data-role="listview"></ul>
+        </div>
+		</section>
+		<div class="advanced">
+			<a data-role="button" href="#about" data-icon="info" data-transition="flip">About...</a>
+		</div>
+	    </div>
+	</div>
+	<!-- /page -->
 
+	<!-- Start of ADD page -->
+	<div data-role="page" id="add">
+	    <div data-theme="a" data-role="header">
+	        <a data-role="button" data-direction="reverse" data-rel="back" data-transition="slide"
+	        href="#home" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left" data-theme="a">
+	            Back
+	        </a>
+	        <h3>
+	            Add Goal
+	        </h3>
+	    </div>
+		<section id="goal-add">
+	    <div data-role="content">
+				<input class="newgoal" id="new-goal" placeholder="Today I will...">
+	        <input type="submit" data-inline="true" data-icon="plus" data-iconpos="left"
+	        value="Add Goal" class="goalBtn">
+	    </div>
+		</section>
+	</div>
+	<!-- /page -->
+	
+	<!-- Start of ABOUT page -->
+	<div data-role="page" id="about">
+	    <div data-theme="a" data-role="header">
+	        <a data-role="button" data-direction="reverse" data-rel="back" data-transition="slide"
+	        href="#home" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left" data-theme="a">
+	            Back
+	        </a>
+	        <h3>
+	            Add Goal
+	        </h3>
+	      </div>
+		<div data-role="content" align="center">
+			<a>	Created by David Blair, Konrad Scott-Ludwig, Michelle Dean, Pete Fitzgerald, Yi Pu </a><br>
+			<a> Using Jquery, Jquery Mobile, Cordova, and Handlebars </a><br>
+			<a> Created for BU EC327 Fall 2013</a>
+		</div>
+	</div>
+	<!-- /page -->
+		  
+</section>
+		</script>
+		<script id="goal-template" type="text/x-handlebars-template">
+		{{#this}}
+		<li data-id="{{id}}">
+			<h3>{{title}}</h3>
+			<div id="{{id}}-checkboxes" data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                <input id="day-1" name="" type="checkbox" {{#if day1}}checked{{/if}} class="checkDay1">
+                <label for="day-1">
+                {{day1_label}}
+                </label>
+                <input id="day-2" name="" type="checkbox" {{#if day2}}checked{{/if}} class="checkDay2">
+                <label for="day-2">
+                {{day2_label}}
+                </label>
+                <input id="day-3" name="" type="checkbox" {{#if day3}}checked{{/if}} class="checkDay3">
+                <label for="day-3">
+                {{day3_label}}
+                </label>
+                <input id="day-4" name="" type="checkbox" {{#if day4}}checked{{/if}} class="checkDay4">
+                <label for="day-4">
+                {{day4_label}}
+                </label>
+                <input id="day-5" name="" type="checkbox" {{#if day5}}checked{{/if}} class="checkDay5">
+                <label for="day-5">
+                {{day5_label}}
+                </label>
+                <input id="day-6" name="" type="checkbox" {{#if day6}}checked{{/if}} class="checkDay6">
+                <label for="day-6">
+                {{day6_label}}
+                </label>
+                <input id="day-7" name="" type="checkbox" {{#if day7}}checked{{/if}} class="checkDay7">
+                <label for="day-7">
+                {{day7_label}}
+                </label>
+                </fieldset>
+            </div>
+			<div>
+			Current Streak: {{current_streak}}
+			Longest Streak: {{max_streak}}
+			</div>
+			<div class="advanced">
+			<button class="destroy" data-icon="delete">Delete</button>
+			<input class="edit" value="{{title}}">
+			</div>
+		</li>
+		{{/this}}
+		</script>
+		<script src="js/base.js"></script>
+		<script src="js/handlebars.js"></script>
+		<script src="js/app.js"></script>
+		
+		
+	</body>
+</html>
